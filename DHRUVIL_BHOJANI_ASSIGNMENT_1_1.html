@@ -1,0 +1,228 @@
+<html>
+<head>
+	<title>Assignment1_PAGE:2</title>
+	<style>
+	th
+	{
+		color:purple;
+		font-family:helvetica;
+	}
+
+	body 
+	{
+		background:#f2f2f2;
+	}
+
+	img 
+	{
+		height:150px;
+		width:300px;
+		border:1.5px solid black;
+		border-top-right-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+
+	div
+	{
+		font-family:helvetica;
+		color: purple;
+	}
+
+	table
+	{
+		background:#ffe6ff;
+		padding: 5px;
+		border:0.5px dashed grey;
+		box-shadow: 5px 10px purple;
+		border-bottom-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+
+	#submit
+	{
+		border:1px dashed blue;
+		border-radius: 25px;
+		background:powderblue;
+	}
+	#submit:hover
+	{
+		background-color:lightpink;
+		color:blue;
+	}
+
+	#reset
+	{
+		border:1px dashed blue;
+		border-radius: 25px;
+		background:powderblue;
+	}
+	#reset:hover
+	{
+		background-color:red;
+		color:blue;
+	}
+
+	#btn
+	{
+		border:1px dashed blue;
+		border-radius: 25px;
+		background:powderblue;
+	}
+	#btn:hover
+	{
+		background-color:lightgreen;
+		color:blue;
+	}
+
+	summary
+	{
+		background: lightyellow;
+		border-radius: 100px;
+		color: red;
+	}
+	</style>
+</head>
+<body>
+	<form autocomplete="off" action="DHRUVIL_BHOJANI_ASSIGNMENT_1.HTML" onsubmit="return check()">
+		<font color="green">
+			<h1 align="center">
+				<u>TASKS</u>
+			</h1>
+		</font>
+		
+		<details>
+			<summary>Task 1. Image with description</summary>
+			<center>
+				<div>
+					<h1>STATUE OF UNITY</h1>
+				</div>
+				<img src="india.jpg" width=140 height=110></img>
+			</center>
+			<p>The Statue of Unity is a colossal statue of Indian statesman and independence activist Vallabhbhai Patel, who was the first Deputy Prime Minister and Home Minister of independent India.It is the <b>world's tallest statue with a height of <var>182 metres (597 feet)</var></b>. It is located on the Narmada River in the Kevadiya colony, facing the Sardar Sarovar Dam <var>100 kilometres (62 mi)</var> southeast of the city of Vadodara. It was designed by Indian sculptor Ram V. Sutar, and was inaugurated by Indian Prime Minister Narendra Modi on 31 October 2018, the 143rd anniversary of Sardar Patel's birth.</p>
+		</details>
+		
+		<br>
+		
+		<details>
+			<summary>Task 2. Simple Form</summary>
+			<br><br>
+			<center>
+				<div>
+					<h1>FORM</h1>
+				</div>
+				<table>
+
+					<tr>
+						<th align="left">First name</th>
+						<td>:</td>
+						<td>
+							<input type="textbox" id="Fname" placeholder="First name"></input><br>
+							<span id="Fnamee"></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<th align="left">Last name</th>
+						<td>:</td>
+						<td>
+							<input type="textbox" id="Lname" placeholder="Last name"></input>
+						</td>
+					</tr>
+					
+					<tr>
+						<th align="left">Surname</th>
+						<td>:</td>
+						<td>
+							<input type="textbox" id="Surname" placeholder="Surname"></input><br>
+							<span id="Surnamee"></span>
+						</td>
+					</tr>
+
+					<tr>
+						<th align="left">Mail ID</th>
+						<td>:</td>
+						<td>
+							<input type="email" id="MailID" size=50 placeholder="Mail ID"></input><br>
+							<span id="MailIDD"></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<th align="left">Enrollment Number</th>
+						<td>:</td>
+						<td>
+							<input type="number" id="Enumber" size=12 placeholder="Enrollment Number"></input><br>
+							<span id="Enumberr"></span>
+						</td>
+					</tr>
+					
+					<tr>
+						<th align="left" required>Roll Number</th>
+						<td>:</td>
+						<td>
+							<input type="textbox" id="Rnumber" size=6 placeholder="Roll Number"></input><br>
+							<span id="Rnumberr"></span>
+						</td>
+					</tr>
+					
+					<tr>
+					</tr>
+
+					<tr>
+						<th>
+							<input type="Submit" id="Submit" value="Submit"></input>
+						</th>
+						<td></td>
+						<th align="left">
+							<input type="Reset" id="reset" value="Reset"></input> 
+							<a href="DHRUVIL_BHOJANI_ASSIGNMENT_1.HTML">
+								<input type="button" id="btn" value="Back"></input>
+							</a>
+						</th>
+					</tr>
+				</table>
+			</center>
+		</details>
+	</form>
+
+	<script type="text/javascript">
+	function check()
+	{
+		var user=document.getElementById('Fname').value;
+		if(user=="")
+		{
+		document.getElementById('Fnamee').innerHTML="Please Enter First name";
+		return false;
+		}
+		
+		var user=document.getElementById('Surname').value;
+		if(user=="")
+		{
+		document.getElementById('Surnamee').innerHTML="Please Enter Surname";
+		return false;
+		}
+		
+		var user=document.getElementById('MailID').value;
+		if(user=="")
+		{
+		document.getElementById('MailIDD').innerHTML="Please Enter Mail ID";
+		return false;
+		}
+		
+		var user=document.getElementById('Enumber').value;
+		if(user<=200170116001 || user>=200170116071)
+		{
+		document.getElementById('Enumberr').innerHTML="Please Enter Enrollment number";
+		return false;
+		}
+		
+		var user=document.getElementById('Rnumber').value;
+		if(user=="")
+		{
+		document.getElementById('Rnumberr').innerHTML="Please Enter Roll number";
+		return false;
+		}
+	}
+	</script>
+</body>
+</html>
