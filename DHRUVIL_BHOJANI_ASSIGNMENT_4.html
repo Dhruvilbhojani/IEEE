@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Assignment_4.css"></link>
+</head>
+<body>
+
+<div class="sidenav">
+	<center><h2>VGEC CLUBS</h2></center>
+  <a href="#">NCC</</a>
+  <a href="#">NSS</a>
+  <a href="#">AdvaNature</a>
+  <a href="#">VAA</a>
+  <button class="dropdown-btn">IEEE
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Membership</a>
+    <a href="#">Departments</a>
+    <a href="#">Events</a>
+  </div>
+</div>
+
+<div class="main">
+  <h1 align="center">VGEC CLUBS</h1>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+  <p>Hello Friends, Welcome to the VGEC Club Page..............</p>
+</div>
+
+<script>
+var i,dropdown = document.getElementsByClassName("dropdown-btn");
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display == "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 
